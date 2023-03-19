@@ -81,7 +81,7 @@ with st.sidebar:
 
 if st.session_state.mode == "Home":
     st.title("Home")
-    st.image(Image.open('foto.png'))
+    st.image(Image.open('foto.PNG'))
     st.header("Hi, I am Fábio Lofredo Cesar...")
     st.markdown("I have degree in physics on Unicamp (University of Campinas), and I am currently doing Bachelor in Data Science on Univesp (Virtual University of the State of São Paulo).")
     st.markdown("I also have experience and interests in Python, C#, Unity, Game Developer, Education, Arduino, Machine Learning and Neural Networks.")
