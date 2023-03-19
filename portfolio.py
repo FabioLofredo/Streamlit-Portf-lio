@@ -106,6 +106,7 @@ elif st.session_state.mode == "Projects":
         truco_func()    
 elif st.session_state.mode == "Contact":
     st.title("Contact")
+    st.success("[Linkedin](https://www.linkedin.com/in/f%C3%A1bio-lofredo-cesar-050613262/?locale=en_US)")
 
 
 
