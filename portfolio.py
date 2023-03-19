@@ -44,7 +44,7 @@ def titanic_func():
     st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-Titanic-Project-2023)")
 
 def ml_from_zero_func():
-    st.markdown("Machine Learning Algorithms constructed from the begin. Without using the Sklearn.")
+    st.markdown("3 Machine Learning Algorithms was constructed from the begin: Decision tree Classifier, Decision Tree Regressor and Random Forest Classifier. All of them was made without using the Sklearn.")
     st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-ML-Without-Sklearn-2023)")
     st.video('https://youtu.be/zCkC2Dh4KKM')
 
@@ -61,7 +61,6 @@ def per_func():
 def truco_func():
     st.markdown("Truco - This game was created by Fábio Lofredo Cesar in 2007 in the University as student using C++")
     st.success("[GitHub](https://github.com/FabioLofredo/Truco-2007)")
-
 
 if 'mode' not in st.session_state:
     st.session_state.mode = 'Home'
@@ -83,7 +82,7 @@ if st.session_state.mode == "Home":
     st.title("Home")
     st.image(Image.open('foto.PNG'))
     st.header("Hi, I am Fábio Lofredo Cesar...")
-    st.markdown("I have degree in physics on Unicamp (University of Campinas), and I am currently doing Bachelor in Data Science on Univesp (Virtual University of the State of São Paulo).")
+    st.markdown("I have degree in physics on Unicamp (University of Campinas), and I am currently doing Bachelor in Data Science on Univesp (Virtual University of the State of São Paulo). I am studying and making projects in the Research Group GEIA (Artificial Intelligence Study Group)")
     st.markdown("I also have experience and interests in Python, C#, Unity, Game Developer, Education, Arduino, Machine Learning and Neural Networks.")
     st.success("[GitHub](https://github.com/FabioLofredo?tab=repositories)")
 
