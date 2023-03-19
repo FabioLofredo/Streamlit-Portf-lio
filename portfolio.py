@@ -82,7 +82,7 @@ if st.session_state.mode == "Home":
     st.title("Home")
     st.image(Image.open('foto.PNG'))
     st.header("Hi, I am Fábio Lofredo Cesar...")
-    st.markdown("I have degree in physics on Unicamp (University of Campinas), and I am currently doing Bachelor in Data Science on Univesp (Virtual University of the State of São Paulo). I am studying and making projects in the Research Group GEIA (Artificial Intelligence Study Group)")
+    st.markdown("I have degree in physics on Unicamp (University of Campinas), I am currently doing Bachelor in Data Science on Univesp (Virtual University of the State of São Paulo) and making projects in the Research Group GEIA (Artificial Intelligence Study Group)")
     st.markdown("I also have experience and interests in Python, C#, Unity, Game Developer, Education, Arduino, Machine Learning and Neural Networks.")
     st.success("[GitHub](https://github.com/FabioLofredo?tab=repositories)")
 
