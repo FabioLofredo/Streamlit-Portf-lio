@@ -2,8 +2,8 @@ import streamlit as st
 from PIL import Image
 
 def unity_func():
-    st.markdown("These games was produce to teach as example for 7 classes with students in high school from technology class. All videos and games below was produced by me.")
-    st.markdown("They learnt how to make games on Unity, Programming in C#, Create a character in vectorial art with InkScape and animate the character with DragonBones")
+    st.markdown("These games were produced to serve as an example for 7 classes with high school students from the technology class. All videos and games below were produced by me.")
+    st.markdown("They learnt how to make games on Unity, program in C#, Create a vector art character with InkScape and animate the character with DragonBones")
     st.success("[GitHub](https://github.com/FabioLofredo/Small-games-in-Unity-for-Teaching-2022)")
     st.write('compilation of 10 games in Unity:')
     st.video('https://youtu.be/e4NozORcyOE')
@@ -24,13 +24,13 @@ def unity_func():
 
 def arduino_func():
     st.markdown("This project is still ongoing")
-    st.markdown("this project was made for 3 classes with students in high school from physics class")
+    st.markdown("this project was made for 3 classes with high school students from physics class")
     st.success("[GitHub](https://github.com/FabioLofredo/Arduino-Projects-2023)")
     st.write('Project 1: Light Sensor (sinal + graph): ')
-    st.write('Made on Python with pyfirmata, a light sensor colect the intensity of light and plots on a graph.')
+    st.write('It was made on Python with pyfirmata, a light sensor colect the light intensity and plots on a graph.')
     st.video('https://youtu.be/jDDUAnyqsSo')
     st.write('Project 2: Distance Sensor:')
-    st.write('A distance sensor turn on and off the LEDs based on distance')
+    st.write('A distance sensor turns the LEDs on and off based on distance')
     st.video('https://youtu.be/WQMvbVNAx7c')
 
 def titanic_func():
@@ -44,7 +44,7 @@ def titanic_func():
     st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-Titanic-Project-2023)")
 
 def ml_from_zero_func():
-    st.markdown("3 Machine Learning Algorithms was constructed from the begin: Decision tree Classifier, Decision Tree Regressor and Random Forest Classifier. All of them was made without using the Sklearn.")
+    st.markdown("Three Machine Learning Algorithms were built from the ground up: Decision Tree Classifier, Decision Tree Regressor, and Random Forest Classifier. All of them were made without using Sklearn.")
     st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-ML-Without-Sklearn-2023)")
     st.video('https://youtu.be/zCkC2Dh4KKM')
 
@@ -54,7 +54,7 @@ def pts_func():
     st.video('https://youtu.be/8qkj7s9h2GE')
 
 def per_func():
-    st.markdown("The teacher himself creates the images with the questions and answers. The program takes the image file and randomly generates the order of the questions to be listed below for the user.")
+    st.markdown("The teacher himself creates the images with the questions and answers. The program takes the image file and randomly generates the order of questions to be listed below for the user.")
     st.success("[GitHub](https://github.com/FabioLofredo/Educative-Game-in-Unity-Perguntas-e-Respostas-2023)")
     st.video('https://youtu.be/yIPI3T5ITgA')
 
@@ -65,7 +65,6 @@ def truco_func():
 if 'mode' not in st.session_state:
     st.session_state.mode = 'Home'
 
-
 with st.sidebar:
     mode = "Home"
     if st.button('Home'):
@@ -74,9 +73,6 @@ with st.sidebar:
         st.session_state.mode = "Projects"
     if st.button('Contact'):
         st.session_state.mode = "Contact"
-
-
-    
 
 if st.session_state.mode == "Home":
     st.title("Home")
