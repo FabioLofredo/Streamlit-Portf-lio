@@ -21,6 +21,7 @@ def cnn_func():
     st.markdown("The .xlsx file is a Google Sheet that can also be opened in Excel, detailing CNN step by step on sheets.")
     st.markdown("The .pdf file, created by me, serves as a tutorial providing theoretical insights and explanations about CNNs for educational purposes.")
     st.success("[GitHub](https://github.com/FabioLofredo/CNN-Convolutional-Neural-Network")
+    st.video('https://youtu.be/RmKWPcaoYlk')
 
 def unity_func():
     st.markdown("These games were produced to serve as an example for 7 classes with high school students from the technology class. All videos and games below were produced by me.")
@@ -90,8 +91,8 @@ if st.session_state.mode == "Home":
 
 elif st.session_state.mode == "Projects":
     st.title("Projects")
-    project_selection = st.selectbox("Select a project:",('Select here','Unity (Teaching)','Arduino (Teaching)','Data Analisys and Machine Learning(Titanic)',
-    'Machine Learning Algorithms from zero', 'Protect the Spaceship (Game)', 'Perguntas e Respostas (Tool for teacher)','Truco (Game)'))
+    project_selection = st.selectbox("Select a project:",('Select here','Data Analisys and Machine Learning(Titanic)','Machine Learning Algorithms from zero','CNN-Convolutional Neural Network',
+                                                          'Unity (Teaching)','Arduino (Teaching)', 'Protect the Spaceship (Game)', 'Perguntas e Respostas (Tool for teacher)','Truco (Game)'))
     if project_selection == 'Data Analisys and Machine Learning(Titanic)':
         titanic_func()
     elif project_selection == 'Machine Learning Algorithms from zero':
