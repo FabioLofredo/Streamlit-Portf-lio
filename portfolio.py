@@ -20,7 +20,7 @@ def cnn_func():
     st.markdown("Investigation into Convolutional Neural Networks (CNN)")
     st.markdown("The .xlsx file is a Google Sheet that can also be opened in Excel, detailing CNN step by step on sheets.")
     st.markdown("The .pdf file, created by me, serves as a tutorial providing theoretical insights and explanations about CNNs for educational purposes.")
-    st.success("[GitHub](https://github.com/FabioLofredo/CNN-Convolutional-Neural-Network")
+    st.success("[GitHub](https://github.com/FabioLofredo/CNN-Convolutional-Neural-Network)")
     st.video('https://youtu.be/RmKWPcaoYlk')
 
 def unity_func():
