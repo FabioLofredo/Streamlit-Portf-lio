@@ -1,6 +1,27 @@
 import streamlit as st
 from PIL import Image
 
+def titanic_func():
+    st.markdown("The data was taken from kaggle on Titanic - Machine Learning from Disaster")
+    st.markdown("The analysis was done in 5 parts")
+    st.markdown("1.Statistical Tests. A statistical analysis of the data was made by obtaining the p-value and his conclusions, calculating values for obtain information and answering some questions.")
+    st.markdown("2.Cleaning for Machine Learning. the data were cleaned, and transformed into numbers, the data was exported for the step number 3.")
+    st.markdown("3.Machine Learning, Regression for Age. The following Machine Learning were used to calculate the age, the best algorithm exported the data: Random Forest Regression (best results) Decision Tree Regression Support Vector Regression (SVR) Multiple Linear Regression Polynomial Regression")
+    st.markdown("4.Machine Learning, Classification for Survived (Prediction). The following Machine Learning were used to calculate the survived, the best algorithm exported the data: Logistic Regression (probabilistic approach) (best results) Extreme Tree Classification Decision Tree Classification Random Forest Classification KNN")
+    st.markdown("5.Machine Learning, Unsupervised. K-means was used to make analysis.")
+    st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-Titanic-Project-2023)")
+
+def ml_from_zero_func():
+    st.markdown("Three Machine Learning Algorithms were built from the ground up: Decision Tree Classifier, Decision Tree Regressor, and Random Forest Classifier. All of them were made without using Sklearn.")
+    st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-ML-Without-Sklearn-2023)")
+    st.video('https://youtu.be/zCkC2Dh4KKM')
+
+def CNN_func():
+    st.markdown("Investigation into Convolutional Neural Networks (CNNs)")
+    st.markdown("The .xlsx file is a Google Sheet that can also be opened in Excel, detailing CNNs step by step on sheets.")
+    st.markdown("The .pdf file, created by me, serves as a tutorial providing theoretical insights and explanations about CNNs for educational purposes.")
+    st.success("[GitHub](https://github.com/FabioLofredo/CNN-Convolutional-Neural-Network")
+    
 def unity_func():
     st.markdown("These games were produced to serve as an example for 7 classes with high school students from the technology class. All videos and games below were produced by me.")
     st.markdown("They learned how to make games in Unity, program in C#, create a vector art character with InkScape, and animate with DragonBones")
@@ -32,21 +53,6 @@ def arduino_func():
     st.write('Project 2: Distance Sensor:')
     st.write('A distance sensor turns the LEDs on and off based on distance')
     st.video('https://youtu.be/WQMvbVNAx7c')
-
-def titanic_func():
-    st.markdown("The data was taken from kaggle on Titanic - Machine Learning from Disaster")
-    st.markdown("The analysis was done in 5 parts")
-    st.markdown("1.Statistical Tests. A statistical analysis of the data was made by obtaining the p-value and his conclusions, calculating values for obtain information and answering some questions.")
-    st.markdown("2.Cleaning for Machine Learning. the data were cleaned, and transformed into numbers, the data was exported for the step number 3.")
-    st.markdown("3.Machine Learning, Regression for Age. The following Machine Learning were used to calculate the age, the best algorithm exported the data: Random Forest Regression (best results) Decision Tree Regression Support Vector Regression (SVR) Multiple Linear Regression Polynomial Regression")
-    st.markdown("4.Machine Learning, Classification for Survived (Prediction). The following Machine Learning were used to calculate the survived, the best algorithm exported the data: Logistic Regression (probabilistic approach) (best results) Extreme Tree Classification Decision Tree Classification Random Forest Classification KNN")
-    st.markdown("5.Machine Learning, Unsupervised. K-means was used to make analysis.")
-    st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-Titanic-Project-2023)")
-
-def ml_from_zero_func():
-    st.markdown("Three Machine Learning Algorithms were built from the ground up: Decision Tree Classifier, Decision Tree Regressor, and Random Forest Classifier. All of them were made without using Sklearn.")
-    st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-ML-Without-Sklearn-2023)")
-    st.video('https://youtu.be/zCkC2Dh4KKM')
 
 def pts_func():
     st.markdown("This game was made by Fábio Lofredo Cesar in 2014, in the vacations for fun. It was made using the programming language Monkey X.")
@@ -86,14 +92,16 @@ elif st.session_state.mode == "Projects":
     st.title("Projects")
     project_selection = st.selectbox("Select a project:",('Select here','Unity (Teaching)','Arduino (Teaching)','Data Analisys and Machine Learning(Titanic)',
     'Machine Learning Algorithms from zero', 'Protect the Spaceship (Game)', 'Perguntas e Respostas (Tool for teacher)','Truco (Game)'))
-    if project_selection == 'Unity (Teaching)':
-        unity_func()
-    elif project_selection == 'Arduino (Teaching)':
-        arduino_func()
-    elif project_selection == 'Data Analisys and Machine Learning(Titanic)':
+    if project_selection == 'Data Analisys and Machine Learning(Titanic)':
         titanic_func()
     elif project_selection == 'Machine Learning Algorithms from zero':
         ml_from_zero_func()
+    elif project_selection == 'CNN-Convolutional Neural Network':
+        CNN_func()
+    elif project_selection == 'Unity (Teaching)':
+        unity_func()
+    elif project_selection == 'Arduino (Teaching)':
+        arduino_func()
     elif project_selection == 'Protect the Spaceship (Game)':
         pts_func()
     elif project_selection == 'Perguntas e Respostas (Tool for teacher)':
