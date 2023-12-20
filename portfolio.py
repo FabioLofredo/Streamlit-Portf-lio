@@ -16,12 +16,12 @@ def ml_from_zero_func():
     st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-ML-Without-Sklearn-2023)")
     st.video('https://youtu.be/zCkC2Dh4KKM')
 
-def CNN_func():
+def cnn_func():
     st.markdown("Investigation into Convolutional Neural Networks (CNNs)")
     st.markdown("The .xlsx file is a Google Sheet that can also be opened in Excel, detailing CNNs step by step on sheets.")
     st.markdown("The .pdf file, created by me, serves as a tutorial providing theoretical insights and explanations about CNNs for educational purposes.")
     st.success("[GitHub](https://github.com/FabioLofredo/CNN-Convolutional-Neural-Network")
-    
+
 def unity_func():
     st.markdown("These games were produced to serve as an example for 7 classes with high school students from the technology class. All videos and games below were produced by me.")
     st.markdown("They learned how to make games in Unity, program in C#, create a vector art character with InkScape, and animate with DragonBones")
@@ -97,7 +97,7 @@ elif st.session_state.mode == "Projects":
     elif project_selection == 'Machine Learning Algorithms from zero':
         ml_from_zero_func()
     elif project_selection == 'CNN-Convolutional Neural Network':
-        CNN_func()
+        cnn_func()
     elif project_selection == 'Unity (Teaching)':
         unity_func()
     elif project_selection == 'Arduino (Teaching)':
