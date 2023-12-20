@@ -91,13 +91,13 @@ if st.session_state.mode == "Home":
 
 elif st.session_state.mode == "Projects":
     st.title("Projects")
-    project_selection = st.selectbox("Select a project:",('Select here','Data Analisys and Machine Learning(Titanic)','Machine Learning Algorithms from zero','CNN-Convolutional Neural Network',
+    project_selection = st.selectbox("Select a project:",('Select here','Data Analisys and Machine Learning(Titanic)','Machine Learning Algorithms from zero','CNN - Convolutional Neural Network',
                                                           'Unity (Teaching)','Arduino (Teaching)', 'Protect the Spaceship (Game)', 'Perguntas e Respostas (Tool for teacher)','Truco (Game)'))
     if project_selection == 'Data Analisys and Machine Learning(Titanic)':
         titanic_func()
     elif project_selection == 'Machine Learning Algorithms from zero':
         ml_from_zero_func()
-    elif project_selection == 'CNN-Convolutional Neural Network':
+    elif project_selection == 'CNN - Convolutional Neural Network':
         cnn_func()
     elif project_selection == 'Unity (Teaching)':
         unity_func()
