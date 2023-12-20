@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 def titanic_func():
-    st.markdown("The data was taken from kaggle on Titanic - Machine Learning from Disaster ")
+    st.markdown("The data was taken from kaggle on Titanic - Machine Learning from Disaster")
     st.markdown("The analysis was done in 5 parts")
     st.markdown("1.Statistical Tests. A statistical analysis of the data was made by obtaining the p-value and his conclusions, calculating values for obtain information and answering some questions.")
     st.markdown("2.Cleaning for Machine Learning. the data were cleaned, and transformed into numbers, the data was exported for the step number 3.")
@@ -17,8 +17,8 @@ def ml_from_zero_func():
     st.video('https://youtu.be/zCkC2Dh4KKM')
 
 def cnn_func():
-    st.markdown("Investigation into Convolutional Neural Networks (CNNs)")
-    st.markdown("The .xlsx file is a Google Sheet that can also be opened in Excel, detailing CNNs step by step on sheets.")
+    st.markdown("Investigation into Convolutional Neural Networks (CNN)")
+    st.markdown("The .xlsx file is a Google Sheet that can also be opened in Excel, detailing CNN step by step on sheets.")
     st.markdown("The .pdf file, created by me, serves as a tutorial providing theoretical insights and explanations about CNNs for educational purposes.")
     st.success("[GitHub](https://github.com/FabioLofredo/CNN-Convolutional-Neural-Network")
 
