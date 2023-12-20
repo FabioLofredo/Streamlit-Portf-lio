@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 def titanic_func():
-    st.markdown("The data was taken from kaggle on Titanic - Machine Learning from Disaster")
+    st.markdown("The data was taken from kaggle on Titanic - Machine Learning from Disaster ")
     st.markdown("The analysis was done in 5 parts")
     st.markdown("1.Statistical Tests. A statistical analysis of the data was made by obtaining the p-value and his conclusions, calculating values for obtain information and answering some questions.")
     st.markdown("2.Cleaning for Machine Learning. the data were cleaned, and transformed into numbers, the data was exported for the step number 3.")
