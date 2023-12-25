@@ -2,17 +2,17 @@ import streamlit as st
 from PIL import Image
 
 def titanic_func():
-    st.markdown("The data was taken from kaggle on Titanic - Machine Learning from Disaster")
-    st.markdown("The analysis was done in 5 parts")
-    st.markdown("1.Statistical Tests. A statistical analysis of the data was made by obtaining the p-value and his conclusions, calculating values for obtain information and answering some questions.")
-    st.markdown("2.Cleaning for Machine Learning. the data were cleaned, and transformed into numbers, the data was exported for the step number 3.")
-    st.markdown("3.Machine Learning, Regression for Age. The following Machine Learning were used to calculate the age, the best algorithm exported the data: Random Forest Regression (best results) Decision Tree Regression Support Vector Regression (SVR) Multiple Linear Regression Polynomial Regression")
-    st.markdown("4.Machine Learning, Classification for Survived (Prediction). The following Machine Learning were used to calculate the survived, the best algorithm exported the data: Logistic Regression (probabilistic approach) (best results) Extreme Tree Classification Decision Tree Classification Random Forest Classification KNN")
-    st.markdown("5.Machine Learning, Unsupervised. K-means was used to make analysis.")
+    st.markdown("The data for this analysis was obtained from Kaggle's 'Titanic - Machine Learning from Disaster' competition (https://www.kaggle.com/competitions/titanic).")
+    st.markdown("The analysis was conducted in five parts:")
+    st.markdown("1.Statistical Tests: A statistical analysis of the data involved obtaining p-values and drawing conclusions. Calculations were performed to gather information and address specific questions.")
+    st.markdown("2.Cleaning for Machine Learning: The data underwent cleaning and transformation into numerical format. The processed data was then exported for the subsequent step.")
+    st.markdown("3.Machine Learning for Age Regression: Various machine learning algorithms, including Random Forest Regression (yielding the best results), Decision Tree Regression, Support Vector Regression (SVR), Multiple Linear Regression, and Polynomial Regression, were employed to predict ages.")
+    st.markdown("4.Machine Learning for Survival Prediction (Classification): Several machine learning algorithms, such as Logistic Regression (using a probabilistic approach and achieving the best results), Extreme Tree Classification, Decision Tree Classification, Random Forest Classification, and K-Nearest Neighbors (KNN), were utilized to predict survival outcomes.")
+    st.markdown("5.Machine Learning Unsupervised Analysis: K-means clustering was employed for an unsupervised analysis.")
     st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-Titanic-Project-2023)")
 
 def ml_from_zero_func():
-    st.markdown("Three Machine Learning Algorithms were built from the ground up: Decision Tree Classifier, Decision Tree Regressor, and Random Forest Classifier. All of them were made without using Sklearn.")
+    st.markdown("I developed three distinct Machine Learning Algorithms—Decision Tree Classifier, Decision Tree Regressor, and Random Forest Classifier—from scratch, without relying on the Sklearn library.")
     st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-ML-Without-Sklearn-2023)")
     st.video('https://youtu.be/zCkC2Dh4KKM')
 
@@ -23,8 +23,16 @@ def cnn_func():
     st.success("[GitHub](https://github.com/FabioLofredo/CNN-Convolutional-Neural-Network)")
     st.video('https://youtu.be/RmKWPcaoYlk')
 
+def sheets_func():
+    st.markdown("Google sheets and Excel files")
+    st.markdown("'CNN - Convolutional Neural Network.xlsx' is an example of a CNN.")
+    st.markdown("'Rede Neural Perceptron.xlsx' is a file containing a perceptron neural network.")
+    st.markdown("'Tabela para digitar notas v1.4.xlsx' is a sheet for the teacher to enter the students' grades.")
+    st.markdown("'Univesp atividades.xlsx' is a tool for students to calculate their grades.")
+    st.success("[GitHub](https://github.com/FabioLofredo/Planilhas-Google-Sheet-Excel-)")
+
 def unity_func():
-    st.markdown("These games were produced to serve as an example for 7 classes with high school students from the technology class. All videos and games below were produced by me.")
+    st.markdown("I created these games as examples for seven high school technology classes. All the videos and games below were produced by me.")
     st.markdown("They learned how to make games in Unity, program in C#, create a vector art character with InkScape, and animate with DragonBones")
     st.success("[GitHub](https://github.com/FabioLofredo/Small-games-in-Unity-for-Teaching-2022)")
     st.write('compilation of 10 games in Unity:')
@@ -45,8 +53,7 @@ def unity_func():
     st.video('https://youtu.be/WOk4YUOig2Y')
 
 def arduino_func():
-    st.markdown("This project is still ongoing")
-    st.markdown("this project was made for 3 classes with high school students from physics class")
+    st.markdown("This project was created for three high school physics classes. The examples below demonstrate what was presented to them")
     st.success("[GitHub](https://github.com/FabioLofredo/Arduino-Projects-2023)")
     st.write('Project 1: Light Sensor (sinal + graph): ')
     st.write('It was made on Python with pyfirmata, a light sensor colect the light intensity and plots on a graph.')
@@ -56,17 +63,17 @@ def arduino_func():
     st.video('https://youtu.be/WQMvbVNAx7c')
 
 def pts_func():
-    st.markdown("This game was made by Fábio Lofredo Cesar in 2014, in the vacations for fun. It was made using the programming language Monkey X.")
+    st.markdown("I created this game for fun during my 2014 vacation using the programming language Monkey X.")
     st.success("[GitHub](https://github.com/FabioLofredo/Protect-the-Spaceship-2014)")
     st.video('https://youtu.be/8qkj7s9h2GE')
 
 def per_func():
-    st.markdown("The teacher himself creates the images with the questions and answers. The program takes the image file and randomly generates the order of questions to be listed below for the user.")
+    st.markdown("The teacher himself creates the images with the questions and answers. The program takes the image file and randomly generates the order of questions for the user.")
     st.success("[GitHub](https://github.com/FabioLofredo/Educative-Game-in-Unity-Perguntas-e-Respostas-2023)")
     st.video('https://youtu.be/yIPI3T5ITgA')
 
 def truco_func():
-    st.markdown("Truco - This game was created by Fábio Lofredo Cesar in 2007 in the University as student using C++")
+    st.markdown("Truco - This game was created by me in 2007 in the University as student using C++")
     st.success("[GitHub](https://github.com/FabioLofredo/Truco-2007)")
 
 if 'mode' not in st.session_state:
@@ -95,6 +102,7 @@ elif st.session_state.mode == "Projects":
                 'Data Analisys and Machine Learning - Titanic',
                 'Machine Learning Algorithms from zero',
                 'CNN - Convolutional Neural Network',
+                'Sheets for Excel or Google Sheets',
                 'Unity (Teaching)',
                 'Arduino (Teaching)',
                 'Protect the Spaceship (Game)',
@@ -110,14 +118,16 @@ elif st.session_state.mode == "Projects":
     elif project_selection == projects[3]:
         cnn_func()
     elif project_selection == projects[4]:
-        unity_func()
+        sheets_func()
     elif project_selection == projects[5]:
-        arduino_func()
+        unity_func()
     elif project_selection == projects[6]:
-        pts_func()
+        arduino_func()
     elif project_selection == projects[7]:
-        per_func()
+        pts_func()
     elif project_selection == projects[8]:
+        per_func()
+    elif project_selection == projects[9]:
         truco_func()    
 elif st.session_state.mode == "Contact":
     st.title("Contact")
