@@ -18,8 +18,8 @@ def ml_from_zero_func():
 
 def cnn_func():
     st.markdown("Investigation into Convolutional Neural Networks (CNN)")
-    st.markdown("The .xlsx file is a Google Sheet that can also be opened in Excel, detailing CNN step by step on sheets.")
-    st.markdown("The .pdf file, created by me, serves as a tutorial providing theoretical insights and explanations about CNNs for educational purposes.")
+    st.markdown("The '.xlsx' file is a Google Sheet that can also be opened in Excel, detailing CNN step by step on sheets.")
+    st.markdown("The three '.pdf' files, all created by me, consist of a tutorial that offers theoretical insights and explanations about CNNs for educational purposes, presentation slides, and a '.pdf' version of the CNN sheet.")
     st.success("[GitHub](https://github.com/FabioLofredo/CNN-Convolutional-Neural-Network)")
     st.video('https://youtu.be/RmKWPcaoYlk')
 
@@ -91,23 +91,33 @@ if st.session_state.mode == "Home":
 
 elif st.session_state.mode == "Projects":
     st.title("Projects")
-    project_selection = st.selectbox("Select a project:",('Select here','Data Analisys and Machine Learning(Titanic)','Machine Learning Algorithms from zero','CNN - Convolutional Neural Network',
-                                                          'Unity (Teaching)','Arduino (Teaching)', 'Protect the Spaceship (Game)', 'Perguntas e Respostas (Tool for teacher)','Truco (Game)'))
-    if project_selection == 'Data Analisys and Machine Learning(Titanic)':
+    projects = ['Select here',
+                'Data Analisys and Machine Learning - Titanic',
+                'Machine Learning Algorithms from zero',
+                'CNN - Convolutional Neural Network',
+                'Unity (Teaching)',
+                'Arduino (Teaching)',
+                'Protect the Spaceship (Game)',
+                'Perguntas e Respostas (Tool for teacher)',
+                'Truco (Game)']
+    project_selection = st.selectbox("Select a project:",projects)
+    if project_selection == projects[0]:
+        st.write('')
+    elif project_selection == projects[1]:
         titanic_func()
-    elif project_selection == 'Machine Learning Algorithms from zero':
+    elif project_selection == projects[2]:
         ml_from_zero_func()
-    elif project_selection == 'CNN - Convolutional Neural Network':
+    elif project_selection == projects[3]:
         cnn_func()
-    elif project_selection == 'Unity (Teaching)':
+    elif project_selection == projects[4]:
         unity_func()
-    elif project_selection == 'Arduino (Teaching)':
+    elif project_selection == projects[5]:
         arduino_func()
-    elif project_selection == 'Protect the Spaceship (Game)':
+    elif project_selection == projects[6]:
         pts_func()
-    elif project_selection == 'Perguntas e Respostas (Tool for teacher)':
+    elif project_selection == projects[7]:
         per_func()
-    elif project_selection == 'Truco (Game)':
+    elif project_selection == projects[8]:
         truco_func()    
 elif st.session_state.mode == "Contact":
     st.title("Contact")
