@@ -25,7 +25,7 @@ def cnn_func():
 
 def tl_func():
     st.markdown("Transfer Learning")
-    st.markdown("Project "Chest X-Ray Images" from kaggle. The transfer learning uses Resnet_v2 and Inception_v3.")
+    st.markdown("Project 'Chest X-Ray Images' from kaggle. The transfer learning uses Resnet_v2 and Inception_v3.")
     st.markdown("https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/")    
     st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-Transfer-Learning)")
     
