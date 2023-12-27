@@ -23,6 +23,12 @@ def cnn_func():
     st.success("[GitHub](https://github.com/FabioLofredo/CNN-Convolutional-Neural-Network)")
     st.video('https://youtu.be/RmKWPcaoYlk')
 
+def tl_func():
+    st.markdown("Transfer Learning")
+    st.markdown("Project "Chest X-Ray Images" from kaggle. The transfer learning uses Resnet_v2 and Inception_v3.")
+    st.markdown("https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/")    
+    st.success("[GitHub](https://github.com/FabioLofredo/Data-Science-Transfer-Learning)")
+    
 def sheets_func():
     st.markdown("Google sheets and Excel files")
     st.markdown("'CNN - Convolutional Neural Network.xlsx' is an example of a CNN.")
@@ -102,6 +108,7 @@ elif st.session_state.mode == "Projects":
                 'Data Analisys and Machine Learning - Titanic',
                 'Machine Learning Algorithms from zero',
                 'CNN - Convolutional Neural Network',
+                'Transfer Learning - X-ray Project'
                 'Sheets for Excel or Google Sheets',
                 'Unity (Teaching)',
                 'Arduino (Teaching)',
@@ -118,16 +125,18 @@ elif st.session_state.mode == "Projects":
     elif project_selection == projects[3]:
         cnn_func()
     elif project_selection == projects[4]:
-        sheets_func()
+        tl_func()
     elif project_selection == projects[5]:
-        unity_func()
+        sheets_func()
     elif project_selection == projects[6]:
-        arduino_func()
+        unity_func()
     elif project_selection == projects[7]:
-        pts_func()
+        arduino_func()
     elif project_selection == projects[8]:
-        per_func()
+        pts_func()
     elif project_selection == projects[9]:
+        per_func()
+    elif project_selection == projects[10]:
         truco_func()    
 elif st.session_state.mode == "Contact":
     st.title("Contact")
