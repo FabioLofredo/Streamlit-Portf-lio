@@ -108,7 +108,7 @@ elif st.session_state.mode == "Projects":
                 'Data Analisys and Machine Learning - Titanic',
                 'Machine Learning Algorithms from zero',
                 'CNN - Convolutional Neural Network',
-                'Transfer Learning - X-ray Project'
+                'Transfer Learning - X-ray Project',
                 'Sheets for Excel or Google Sheets',
                 'Unity (Teaching)',
                 'Arduino (Teaching)',
